@@ -1,0 +1,18 @@
+version: "3.0"
+
+services:
+  hlds:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./config/cstrk10:/server/hlds_l/cstrike
+      - ./config/cstrk71:/server/hlds_l/cstrk71
+    ports:
+      - 27015:27015
+      - 27015:27015/udp
+    command:
+      - -port 27015 -game cstrike +map cs_italy +maxplayers 16 +sv_lan 1 -sys_ticrate 10000 -pingboost 2
+    security_opt:
+      - no-new-privileges:true

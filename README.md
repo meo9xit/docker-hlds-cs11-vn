@@ -1,6 +1,10 @@
 ### Chạy dedicated server cho CS 1.1 hay chơi ở Việt Nam
-Đã setup sẵn map italy
-Chỉ cần chạy docker compose up là được
+
+
+Đã setup sẵn map italy.
+Thêm rcon_password vào server.cfg trong folder config/cstrk10 để chạy lệnh admin qua rcon.
+Chỉ cần chạy docker compose up là được.
+
 
 ### ORIGINAL README.md
 
