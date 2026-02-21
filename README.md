@@ -2,7 +2,9 @@
 
 
 Đã setup sẵn map italy.
+
 Thêm rcon_password vào server.cfg trong folder config/cstrk10 để chạy lệnh admin qua rcon.
+
 Chỉ cần chạy docker compose up là được.
 
 
