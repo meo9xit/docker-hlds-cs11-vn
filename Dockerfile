@@ -23,6 +23,8 @@ COPY ./install/nowon.so /server/hlds_l/nowon.so
 COPY ./install/booster.so /server/hlds_l/booster.so
 
 COPY config/valve/* ./valve/
+COPY config/cstrk10/ ./cstrike/
+COPY config/cstrk71/ ./cstrk71/
 RUN chmod +x hlds_run
 RUN chmod +x hlds_start
 
