@@ -2,13 +2,8 @@ version: "3.0"
 
 services:
   hlds:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: docker-hlds-won2-1104-hlds
     restart: always
-    volumes:
-      - ./config/cstrk10:/server/hlds_l/cstrike
-      - ./config/cstrk71:/server/hlds_l/cstrk71
     ports:
       - 27015:27015
       - 27015:27015/udp
